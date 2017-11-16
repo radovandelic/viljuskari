@@ -477,7 +477,7 @@ namespace backbone
                                 {
                                     nacinPodizanja = "duplex";
                                 }
-                                else if (nacinPodizanja.Contains("Tripex"))
+                                else if (nacinPodizanja.Contains("Triplex"))
                                 {
                                     nacinPodizanja = "triplex";
                                 }
@@ -788,13 +788,13 @@ namespace backbone
 
                                     /*StreamWriter sw = new StreamWriter ("/var/www/html/testing/test.txt", true);
 									sw.WriteLine (i.ToString()+". "+url);
-									sw.WriteLine (DateTime.Now.ToShortDateString () + " /// " + DateTime.Now.ToShortTimeString ());
-									sw.WriteLine (model + "\n" + cena + "\n" +  godina + "\n"  + motor + "\n" +
+									sw.WriteLine (DateTime.Now.ToShortDateString () + " /// " + DateTime.Now.ToShortTimeString ());*/
+									/*Console.WriteLine (" Model: " +model + "\nCena: " + cena + "\nGodina: " +  godina + "\n"  + motor + "\n" +
 									              radnihSati + "\n" + kapacitetKG + "\n" + visinaPodizanja + "\n" + visina + "\n" +  nacinPodizanja + 
 									              "\n" + drzava + "\n" + duzinaVilica + "\n" + url);
-									sw.WriteLine (" ____________________________________________________________");
-									sw.Close ();
-									sw.Dispose ();*/
+									Console.WriteLine (" ____________________________________________________________");*/
+									//sw.Close ();
+									//sw.Dispose ();
 
 
                                     puniBazu(marka, model, cena, godina, motor,
@@ -933,9 +933,8 @@ namespace backbone
             }
         }
         public static void Main(string[] args)
-        {
-            puniBazuMascusRs("Jungheinrich");
-            /*TimeSpan interval = new TimeSpan (6, 0, 0);
+        {								
+            TimeSpan interval = new TimeSpan (6, 0, 0);
 			while (true) {					
 				truncateTable ();					
 				puniBazuMascusRs ("Jungheinrich");					
@@ -945,7 +944,7 @@ namespace backbone
 				//puniBazuMobileDe ("Linde", "15600");
 				puniBazuForkliftInternational ("Linde");
 				Thread.Sleep (interval);
-			}*/
+			}
 
         }
         private static int urlSkalar(string url)

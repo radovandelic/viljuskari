@@ -37,7 +37,7 @@
 	
 <div id='cssmenu'>
 <ul>
-   <li class='active'><a name="reset" href='viljuskari.php'><span>Naslovna</span></a></li>
+   <li class='active'><a name="reset" href='/'><span>Naslovna</span></a></li>
    <li class='has-sub' id="ponuda1">
     <a href='#'><span>Ponuda</span></a>
       <ul>
@@ -141,8 +141,8 @@ if($_POST['name'] == "marka")
    </li>
    <li class='has-sub'><a href='#'><span>Kontakt</span></a>
       <ul>
-         <li><a href='#'><span>Autor</span></a></li>
-         <li class='last'><a href='#'><span>Tehnologije</span></a></li>
+         <li><a href='autor.php' target="if1" id="Autor"><span>Autor</span></a></li>
+         <li class='last'><a href='tehnologije.php' target="if1" id="Tehnologije"><span>Tehnologije</span></a></li>
       </ul>
    </li>
    <li><a href='logins/login.php' target="if1"><span>Login</span></a></li>
