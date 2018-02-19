@@ -1,3 +1,4 @@
+/*
 using System;
 
 namespace backbone
@@ -8,4 +9,4 @@ namespace backbone
         = "Server=localhost;Port=5432;UserId=<username>;Password=<password>;Database=<database>; CommandTimeout=60; Timeout=20";		
 	}
 }
-
+*/
